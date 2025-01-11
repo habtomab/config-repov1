@@ -1,6 +1,11 @@
 spring:
   application:
     name: calculation-service
+  cloud:
+    config:
+      uri: http://localhost:8888  # URL of the Spring Cloud Config Server
+  profiles:
+    active: default  # Activate the default profile
   datasource:
     url: jdbc:mysql://localhost:3306/calculation_db
     username: root
