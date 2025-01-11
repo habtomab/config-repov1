@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: eligibility-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/eligibility_db
+    username: root
+    password: Pass
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 8081
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
